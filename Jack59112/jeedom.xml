@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+  <TemplateURL></TemplateURL>
+  <Beta>False</Beta>
+  <Category>Domotique</Category>
+  <Name>Jack59112 - Jeedom</Name>
+  <Description>
+    Le logiciel Jeedom est Open Source, vous avez un accès total au logiciel qui gère votre domotique. Ceci est une garantie de transparence, mais également de longévité du logiciel et de votre installation.
+  </Description>
+  <Overview>
+  </Overview>
+  <Support></Support>
+  <Registry></Registry>
+  <GitHub></GitHub>
+  <Repository></Repository>
+  <Project></Project>
+  <BindTime></BindTime>
+  <Privileged></Privileged>
+  <Networking>
+    <Mode>host</Mode>
+    <Publish>
+      <Port>
+        <HostPort>9080</HostPort>
+        <ContainerPort>80</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>9022</HostPort>
+        <ContainerPort>22</ContainerPort>
+      </Port>
+    </Publish>
+  </Networking>
+  <Environment>
+    <Variable>
+      <Name></Name>
+      <Value></Value>
+    </Variable>
+    <Variable>
+      <Name></Name>
+      <Value></Value>
+    </Variable>
+    <Variable>
+      <Name></Name>
+      <Value></Value>
+    </Variable>
+  </Environment>
+  <Data>
+    <Volume>
+      <HostDir>/opt/jeedom/html</HostDir>
+      <ContainerDir>/var/www/html</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir></HostDir>
+      <ContainerDir></ContainerDir>
+      <Mode></Mode>
+    </Volume>
+  </Data>
+  <WebUI>http://[IP]:[PORT:9080]/</WebUI>
+  <Icon></Icon>
+  <DonateText>test</DonateText>
+  <DonateLink></DonateLink>
+  <DonateImg></DonateImg>
+  <ExtraParams></ExtraParams>
+</Containers>
